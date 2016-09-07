@@ -1,2 +1,2 @@
 # raditia.github.io
-Raditia's First Persona Website
+Raditia's First Personal Website
