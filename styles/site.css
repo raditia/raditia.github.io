@@ -262,6 +262,28 @@ section {
 .role-bullets { margin: 6px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; max-width: 62ch; }
 .role-bullets li { font-size: var(--text-body); line-height: 1.55; color: var(--ink); }
 
+.gh-stats { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 28px; }
+.gh-stat { display: flex; flex-direction: column; gap: 2px; }
+.gh-stat strong { font-size: 1.6rem; font-weight: 800; color: var(--ink); }
+.gh-stat span { font-size: var(--text-caption); color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.03em; }
+.gh-loading, .gh-error { font-size: var(--text-body); color: var(--ink-soft); }
+
+.gh-repos { margin: 24px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.gh-repo {
+  background: var(--surface);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.gh-repo a { font-weight: 700; font-size: var(--text-small); color: var(--ink); }
+.gh-repo a:hover { color: var(--accent); }
+.gh-repo p { margin: 0; font-size: var(--text-caption); color: var(--ink-soft); line-height: 1.5; min-height: 1.5em; }
+.gh-repo-meta { display: flex; gap: 14px; font-size: var(--text-caption); color: var(--ink-soft); font-family: var(--mono); }
+
 .edu-grid { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .edu-card {
   background: var(--surface);
