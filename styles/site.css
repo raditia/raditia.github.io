@@ -284,6 +284,23 @@ section {
 .gh-repo p { margin: 0; font-size: var(--text-caption); color: var(--ink-soft); line-height: 1.5; min-height: 1.5em; }
 .gh-repo-meta { display: flex; gap: 14px; font-size: var(--text-caption); color: var(--ink-soft); font-family: var(--mono); }
 
+.blog-posts { margin: 24px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.blog-post {
+  background: var(--surface);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.blog-post img { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--surface-2); }
+.blog-post-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.blog-post-date { font-family: var(--mono); font-size: var(--text-caption); color: var(--ink-soft); }
+.blog-post a.blog-post-title { font-size: var(--text-small); font-weight: 700; color: var(--ink); line-height: 1.35; }
+.blog-post a.blog-post-title:hover { color: var(--accent); }
+.blog-post p { margin: 0; font-size: var(--text-caption); color: var(--ink-soft); line-height: 1.5; }
+
 .edu-grid { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .edu-card {
   background: var(--surface);
