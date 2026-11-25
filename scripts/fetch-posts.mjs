@@ -3,7 +3,8 @@
 // of fetching the Ghost RSS feed client-side (which has no CORS headers).
 import { writeFile } from "node:fs/promises";
 
-const FEED_URL = "https://theboredcoder.com/rss/";
+// Proxied through worker/rss-proxy.js: the blog's Bot Fight Mode blocks GitHub runners.
+const FEED_URL = "https://boredcoder-rss.fhfbydj2pp.workers.dev/";
 const OUT_FILE = new URL("../data/posts.json", import.meta.url);
 const MAX_POSTS = 6;
 
