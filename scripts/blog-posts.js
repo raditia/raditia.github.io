@@ -26,7 +26,9 @@
         }
         var body = el("div", { class: "blog-post-body" });
         body.appendChild(el("span", { class: "blog-post-date", text: formatDate(post.pubDate) }));
-        body.appendChild(el("a", { class: "blog-post-title", href: post.link, target: "_blank", rel: "noopener", text: post.title }));
+        var title = el("h3");
+        title.appendChild(el("a", { href: post.link, target: "_blank", rel: "noopener", text: post.title }));
+        body.appendChild(title);
         body.appendChild(el("p", { text: post.excerpt }));
         li.appendChild(body);
         listEl.appendChild(li);
